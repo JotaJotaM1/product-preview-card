@@ -4,19 +4,24 @@
   margin: 0;
   box-sizing: border-box;
   font-family: "Roboto", sans-serif;
+  background-color: #f4ece4;
 }
 
 main {
-  margin: 20px;
-}
-
-.boxOne {
   display: flex;
   justify-content: center;
   align-items: center;
+  flex-direction: column;
+  margin: 30px 20px;
+}
+
+.boxOne {
   height: 400px;
-  width: 400px;
+  width: 360px;
   background-image: url("../img/image-product-desktop.jpg");
   background-size: cover;
   background-repeat: no-repeat;
+}
+.price {
+  display: flex;
 }

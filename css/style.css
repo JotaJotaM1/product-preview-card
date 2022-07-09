@@ -4,6 +4,8 @@
   margin: 0;
   box-sizing: border-box;
   font-family: "Roboto", sans-serif;
+}
+body {
   background-color: #f4ece4;
 }
 
@@ -21,6 +23,9 @@ main {
   background-image: url("../img/image-product-desktop.jpg");
   background-size: cover;
   background-repeat: no-repeat;
+}
+.boxTwo {
+  background-color: white;
 }
 .price {
   display: flex;

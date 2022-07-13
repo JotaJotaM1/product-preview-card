@@ -25,7 +25,15 @@ main {
   background-repeat: no-repeat;
 }
 .boxTwo {
+  height: auto;
+  width: 360px;
   background-color: white;
+  padding: 20px;
+}
+.perf {
+  letter-spacing: 7px;
+  color: #75767b;
+  font-size: 12px;
 }
 .price {
   display: flex;

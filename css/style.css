@@ -21,6 +21,8 @@ main {
 .boxOne {
   height: 400px;
   width: 360px;
+  border-top-left-radius: 4%;
+  border-top-right-radius: 4%;
   background-image: url("../img/image-product-desktop.jpg");
   background-size: cover;
   background-repeat: no-repeat;
@@ -28,6 +30,8 @@ main {
 .boxTwo {
   height: auto;
   width: 360px;
+  border-bottom-left-radius: 4%;
+  border-bottom-right-radius: 4%;
   background-color: white;
   padding: 20px;
 }

@@ -38,9 +38,9 @@ main {
 
 .perf {
   padding: 10px 0;
-  letter-spacing: 9px;
+  letter-spacing: 8px;
   color: #75767b;
-  font-size: 12px;
+  font-size: 13px;
 }
 h1 {
   font-family: "Fraunces", serif;
@@ -82,4 +82,9 @@ button {
   background-color: hsl(158, 36%, 37%);
   border-style: none;
   color: white;
+}
+.fa-cart-shopping {
+  color: rgb(226, 60, 31);
+  font-size: 40px;
+  padding: 0 10px;
 }

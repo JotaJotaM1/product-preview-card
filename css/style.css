@@ -1,10 +1,12 @@
 @import url("https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,700&family=Montserrat:wght@500;700&display=swap");
+
 * {
   padding: 0;
   margin: 0;
   box-sizing: border-box;
   font-family: "Montserrat", sans-serif;
 }
+
 body {
   background-color: #f4ece4;
 }
@@ -21,17 +23,18 @@ main {
 .boxOne {
   height: 400px;
   width: 360px;
-  border-top-left-radius: 4%;
-  border-top-right-radius: 4%;
+  border-top-left-radius: 3%;
+  border-top-right-radius: 3%;
   background-image: url("../img/image-product-desktop.jpg");
   background-size: cover;
   background-repeat: no-repeat;
 }
+
 .boxTwo {
   height: auto;
   width: 360px;
-  border-bottom-left-radius: 4%;
-  border-bottom-right-radius: 4%;
+  border-bottom-left-radius: 3%;
+  border-bottom-right-radius: 3%;
   background-color: white;
   padding: 20px;
 }
@@ -42,19 +45,23 @@ main {
   color: #75767b;
   font-size: 13px;
 }
+
 h1 {
   font-family: "Fraunces", serif;
   padding-bottom: 10px;
 }
+
 .parrafP {
   font-size: 14px;
   color: #75767b;
   line-height: 25px;
 }
+
 .price {
   display: flex;
   padding: 35px 0 10px 0;
 }
+
 .numOne {
   font-size: 33px;
   font-family: "Fraunces", serif;
@@ -70,6 +77,7 @@ h1 {
   text-decoration: line-through;
   color: #75767b;
 }
+
 button {
   display: flex;
   justify-content: center;
@@ -81,18 +89,44 @@ button {
   border-style: none;
   color: white;
 }
+
 button:hover {
   background-color: hsl(158, 36%, 20%);
   cursor: pointer;
 }
+
 .cart {
   margin-right: 10px;
   height: 18px;
   width: 18px;
 }
 
-@media (max-width: 800px) {
+@media (min-width: 1024px) {
   main {
     display: flex;
+    flex-direction: row;
   }
+
+  .boxTwo {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 500px;
+    width: 280px;
+    border-top-right-radius: 3%;
+    border-bottom-left-radius: 0%;
+  }
+
+  .boxOne {
+    height: 500px;
+    width: 280px;
+    border-top-right-radius: 0%;
+    border-bottom-left-radius: 3%;
+  }
+
+  button {
+    width: 15rem;
+    margin-top: 25px;
+  }
+
 }

@@ -1,71 +1,80 @@
+@import url(reset.css);
 @import url("https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,700&family=Montserrat:wght@500;700&display=swap");
 
+:root {
+  --Dark-cyan: hsl(158, 36%, 37%);
+  --Dak-cyan-hover: hsl(158, 36%, 20%);
+  --Cream: hsl(30, 38%, 92%);
+  --Very-dark-blue: hsl(212, 21%, 14%);
+  --Dark-grayish-blue: hsl(228, 12%, 48%);
+  --white: hsl(0, 0%, 100%);
+  --GrisNumber: #75767b;
+}
+
 * {
-  padding: 0;
-  margin: 0;
-  box-sizing: border-box;
   font-family: "Montserrat", sans-serif;
 }
 
 body {
-  background-color: #f4ece4;
+  background-color: var(--Cream);
 }
 
 main {
+  margin: 20px;
   height: 100vh;
   display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  margin: 30px 20px;
 }
 
 .boxOne {
-  height: 400px;
-  width: 360px;
-  border-top-left-radius: 3%;
-  border-top-right-radius: 3%;
-  background-image: url("../img/image-product-desktop.jpg");
+  height: 30%;
+  width: 100%;
+  background-image: url("../img/image-product-mobile.jpg");
   background-size: cover;
   background-repeat: no-repeat;
+  border-top-left-radius: 3%;
+  border-top-right-radius: 3%;
+
 }
 
 .boxTwo {
-  height: auto;
-  width: 360px;
   border-bottom-left-radius: 3%;
   border-bottom-right-radius: 3%;
-  background-color: white;
+  background-color: var(--white);
   padding: 20px;
 }
 
 .perf {
   padding: 10px 0;
-  letter-spacing: 8px;
-  color: #75767b;
-  font-size: 13px;
+  letter-spacing: 5px;
+  font-size: 11px;
+  color: var(--Dark-grayish-blue);
 }
 
 h1 {
+  font-size: 35px;
   font-family: "Fraunces", serif;
   padding-bottom: 10px;
+  font-weight: 700;
 }
 
 .parrafP {
-  font-size: 14px;
-  color: #75767b;
+  font-size: 15.3px;
+  color: var(--Dark-grayish-blue);
   line-height: 25px;
 }
 
 .price {
   display: flex;
-  padding: 35px 0 10px 0;
+  padding: 30px 0 10px 0;
 }
 
 .numOne {
   font-size: 33px;
   font-family: "Fraunces", serif;
-  color: hsl(158, 36%, 37%);
+  color: var(--Dark-cyan);
 }
 
 .numTwo {
@@ -75,7 +84,7 @@ h1 {
   padding-left: 30px;
   font-size: 13px;
   text-decoration: line-through;
-  color: #75767b;
+  color: var(--GrisNumber);
 }
 
 button {
@@ -85,13 +94,13 @@ button {
   height: 50px;
   width: 20rem;
   border-radius: 0.5rem;
-  background-color: hsl(158, 36%, 37%);
+  background-color: var(--Dark-cyan);
   border-style: none;
   color: white;
 }
 
 button:hover {
-  background-color: hsl(158, 36%, 20%);
+  background-color: var(--Dak-cyan-hover);
   cursor: pointer;
 }
 
@@ -107,26 +116,40 @@ button:hover {
     flex-direction: row;
   }
 
-  .boxTwo {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    height: 500px;
-    width: 280px;
-    border-top-right-radius: 3%;
-    border-bottom-left-radius: 0%;
-  }
-
   .boxOne {
-    height: 500px;
+    background-image: url('../img/image-product-desktop.jpg');
+    height: 480px;
     width: 280px;
     border-top-right-radius: 0%;
     border-bottom-left-radius: 3%;
   }
 
+  .boxTwo {
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 440px;
+    width: 280px;
+    border-top-right-radius: 3%;
+    border-bottom-left-radius: 0%;
+  }
+
+  .perf {
+    font-size: 14px;
+  }
+
+  .parrafP {
+    padding-right: 20px;
+  }
+
+  h1 {
+    padding: 15px 20px 20px 0;
+  }
+
+
   button {
     width: 15rem;
     margin-top: 25px;
   }
-
 }

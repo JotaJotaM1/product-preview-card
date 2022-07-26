@@ -117,6 +117,7 @@ button:hover {
   }
 
   .boxOne {
+    background-position:center;
     background-image: url('../img/image-product-desktop.jpg');
     height: 480px;
     width: 280px;
